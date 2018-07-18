@@ -2,7 +2,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 0 0 0;
-  background-color: black;
+  background-image: url("images/xy-bg.png");
+  background-size: cover;
 }
 
 nav {
@@ -20,9 +21,10 @@ section {
   width: 90%;
   margin-top: 2.5%;
   margin-left: 4%;
+  margin-bottom: 2.5%;
   /* margin-right: 2.5%; */
   min-height: 550px;
-  background-color: black;
+  /* background-image: url("images/bg.jpg") */
   /* border: 10px solid red; */
 }
 
@@ -58,6 +60,13 @@ section {
   background-position: center;
   min-height: 550px;
   background-image: url('images/pball.png');
+  /* background-color: ; */
+}
+
+#frontHouse {
+  background-image: url('images/r-bg.jpg');
+  background-size: cover;
+  /* padding-top: 2.5%; */
 }
 
 #pkmnPic {
@@ -72,6 +81,25 @@ section {
   margin: 5% 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: black;
+  /* background-color: red; */
   grid-column-gap: 2.5%;
+}
+
+#pokeBorder {
+  border: 50px solid black;
+  border-image-source: url(images/pball.png);
+  border-image-width: inherit;
+  border-image-repeat:initial;
+  border-image-outset: 30px 30px;
+  /* border-image-slice: 0; */
+}
+
+.regBorder {
+  border: 20px solid orange;
+
+}
+
+
+.fireBorder {
+  border: 20px solid green;
 }

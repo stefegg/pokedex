@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Stef's Pokedex</title>
   <link rel='stylesheet' href='main.css'>
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
 
-<body>
-  <nav><div class="nav-left">Stefegg the Pokemon Trainer </div>  <div class="nav-right">
+<body id='bodyPlace'>
+  <nav><div class="nav-left">Stefegg's Pokedex</div>  <div class="nav-right">
     <img src="images/pball-gh.png" onclick="pkmn6()" class="nav-btn">
     <audio id="audio6" src="sounds/haunter.mp4" class="nav-btn"></audio>
 
@@ -36,13 +36,15 @@
   </nav>
 
 
-  <section>
+  <section id='frontHouse' class='regBorder'>
+    <div id='pokeBorder'>
     <div id='backHouse'>
       <div id='pokeInfo'>Pokemon Text bg opacity 0</div>
       <div>
-        <img src='' id='pkmnPic'></div>
+        <img src='images/stef.png' id='pkmnPic'></div>
     </div>
     <div id='changes'><button>HEY</button><button>HEY</button><button>HEY</button></div>
+  </div>
   </section>
 
   <footer></footer>

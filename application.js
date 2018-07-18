@@ -13,8 +13,15 @@ function pkmn1() {
   y.classList.add('animated');
   y.classList.add('zoomInUp');
   y.src = pkmnPics.one;
-  var x = document.getElementById('backHouse')
-  x.style.backgroundImage="url('images/fire.png')"
+  var x = document.getElementById('backHouse');
+  x.style.backgroundImage="url('images/fire.png')";
+  var z = document.getElementById('frontHouse');
+  z.classList.remove('regBorder');
+  z.style.backgroundImage="url('images/f-bg.jpg')";
+  z.classList.add('fireBorder');
+  var a = document.getElementById('pokeBorder');
+  a.style.borderImage="url('images/pball.png')";
+  a.style.borderImageOutset = "30px 30px";
 }
 
 function pkmn2() {
@@ -34,6 +41,11 @@ function pkmn2() {
   y.src = pkmnPics.two;
   var x = document.getElementById('backHouse')
   x.style.backgroundImage="url('images/water.png')"
+  var z = document.getElementById('frontHouse');
+  z.style.backgroundImage="url('images/beach-bg.jpg')";
+  var a = document.getElementById('pokeBorder');
+  a.style.borderImage="url('images/pball-w.png')";
+  a.style.borderImageOutset = "30px 30px";
 }
 
 function pkmn3() {
@@ -53,6 +65,11 @@ function pkmn3() {
   y.src = pkmnPics.three;
   var x = document.getElementById('backHouse');
   x.style.backgroundImage="url('images/electric.png')";
+  var z = document.getElementById('frontHouse');
+  z.style.backgroundImage="url('images/e-bg.jpg')";
+  var a = document.getElementById('pokeBorder');
+  a.style.borderImage="url('images/pball-e.png')";
+  a.style.borderImageOutset = "30px 30px";
 }
 
 function pkmn4() {
@@ -72,6 +89,11 @@ function pkmn4() {
   y.src = pkmnPics.four;
   var x = document.getElementById('backHouse')
   x.style.backgroundImage="url('images/ground.png')"
+  var z = document.getElementById('frontHouse');
+  z.style.backgroundImage="url('images/g-bg.jpg')";
+  var a = document.getElementById('pokeBorder');
+  a.style.borderImage="url('images/pball-g.png')";
+  a.style.borderImageOutset = "30px 30px";
 }
 
 function pkmn5() {
@@ -91,6 +113,11 @@ function pkmn5() {
   y.src = pkmnPics.five;
   var x = document.getElementById('backHouse')
   x.style.backgroundImage="url('images/plant.png')"
+  var z = document.getElementById('frontHouse');
+  z.style.backgroundImage="url('images/p-bg.jpg')";
+  var a = document.getElementById('pokeBorder');
+  a.style.borderImage="url('images/pball-p.png')";
+  a.style.borderImageOutset = "30px 30px";
 }
 
 function pkmn6() {
@@ -110,6 +137,11 @@ function pkmn6() {
   y.src = pkmnPics.six;
   var x = document.getElementById('backHouse')
   x.style.backgroundImage="url('images/ghost.png')"
+  var z = document.getElementById('frontHouse');
+  z.style.backgroundImage="url('images/gh-bg.jpg')";
+  var a = document.getElementById('pokeBorder');
+  a.style.borderImage="url('images/pball-gh.png')";
+  a.style.borderImageOutset = "30px 30px";
 }
 
 pkmnPics = {
