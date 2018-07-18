@@ -21,7 +21,7 @@ section {
   margin-top: 2.5%;
   margin-left: 4%;
   /* margin-right: 2.5%; */
-  min-height: 384px;
+  min-height: 550px;
   background-color: black;
   /* border: 10px solid red; */
 }
@@ -56,7 +56,8 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  min-height: 384px;
+  min-height: 550px;
+  background-image: url('images/pball.png');
 }
 
 #pkmnPic {
