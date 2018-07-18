@@ -11,10 +11,10 @@ nav {
   background-color: black;
   /* height: 100%; */
   display: grid;
-  grid-template-columns: 40% 55%;
+  grid-template-columns: 50% 40%;
   grid-column-gap: 5%;
   overflow: auto;
-  background-image: url("images/bg.jpg")
+  background-image: url("images/bg.jpg");
 }
 
 section {
@@ -22,10 +22,11 @@ section {
   margin-top: 2.5%;
   margin-left: 4%;
   margin-bottom: 2.5%;
-  /* margin-right: 2.5%; */
   min-height: 550px;
-  /* background-image: url("images/bg.jpg") */
-  /* border: 10px solid red; */
+}
+
+h1 {
+  margin: 0 0 2px 0;
 }
 
 .nav-btn {
@@ -38,8 +39,9 @@ section {
 
 .nav-left {
   color: red;
-  font-size: 36px;
-  margin: 10% 5% 5% 5%;
+  font-size: 3vh;
+  margin: 5% 5% 5% 5%;
+  display: inline;
 }
 
 .nav-right {
@@ -47,7 +49,8 @@ section {
 }
 
 .nav-left img {
-  max-width: 10%;
+  max-width: 15%;
+  margin-left: 5%;
 }
 
 #backHouse {
@@ -60,13 +63,11 @@ section {
   background-position: center;
   min-height: 550px;
   background-image: url('images/pball.png');
-  /* background-color: ; */
 }
 
 #frontHouse {
   background-image: url('images/r-bg.jpg');
   background-size: cover;
-  /* padding-top: 2.5%; */
 }
 
 #pkmnPic {
@@ -78,10 +79,9 @@ section {
 }
 
 #changes {
-  margin: 5% 5%;
+  margin: 2% 2.5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* background-color: red; */
   grid-column-gap: 2.5%;
 }
 
@@ -89,17 +89,34 @@ section {
   border: 50px solid black;
   border-image-source: url(images/pball.png);
   border-image-width: inherit;
-  border-image-repeat:initial;
+  border-image-repeat: initial;
   border-image-outset: 30px 30px;
-  /* border-image-slice: 0; */
 }
 
 .regBorder {
-  border: 20px solid orange;
-
+  border: 20px solid #7da4db;
 }
 
-
 .fireBorder {
-  border: 20px solid green;
+  border: 20px solid #771917;
+}
+
+.plantBorder {
+  border: 20px solid #2e6234;
+}
+
+.ghostBorder {
+  border: 20px solid #4d2c87;
+}
+
+.electBorder {
+  border: 20px solid #ffba52;
+}
+
+.groundBorder {
+  border: 20px solid #946b3a;
+}
+
+.waterBorder {
+  border: 20px solid #1e3c94;
 }
