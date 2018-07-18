@@ -35,6 +35,12 @@ h1 {
   display: inline;
   margin: 0 5px;
   float: right;
+  transition-property: max-width;
+  transition-duration: 1s;
+}
+
+.nav-btn:hover {
+  max-width: 20%;
 }
 
 .nav-left {
@@ -42,6 +48,7 @@ h1 {
   font-size: 3vh;
   margin: 5% 5% 5% 5%;
   display: inline;
+  font-family: 'Aldrich', sans-serif;
 }
 
 .nav-right {
@@ -78,12 +85,6 @@ h1 {
   color: white;
 }
 
-#changes {
-  margin: 2% 2.5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2.5%;
-}
 
 #pokeBorder {
   border: 50px solid black;
@@ -94,7 +95,7 @@ h1 {
 }
 
 .regBorder {
-  border: 20px solid #7da4db;
+  border: 20px solid #94a1b1;
 }
 
 .fireBorder {
@@ -120,3 +121,10 @@ h1 {
 .waterBorder {
   border: 20px solid #1e3c94;
 }
+
+/* #changes {
+margin: 2% 2.5%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 2.5%;
+} */
