@@ -317,5 +317,29 @@ function iResetyou(){
 }
 
 function sprite6(){
-  document.getElementById('spriteBox').src = 
+  document.getElementById('spriteBox').src = teamStef[2].sprites.front_default;
+}
+
+function sprite5(){
+  document.getElementById('spriteBox').src = teamStef[3].sprites.front_default;
+}
+
+function sprite4(){
+  document.getElementById('spriteBox').src = teamStef[1].sprites.front_default;
+}
+
+function sprite3(){
+  document.getElementById('spriteBox').src = teamStef[5].sprites.front_default;
+}
+
+function sprite2(){
+  document.getElementById('spriteBox').src = teamStef[4].sprites.front_default;
+}
+
+function sprite1(){
+  document.getElementById('spriteBox').src = teamStef[0].sprites.front_default;
+}
+
+function sprite0(){
+  document.getElementById('spriteBox').src = pkmnPics.seven;
 }
