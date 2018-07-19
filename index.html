@@ -13,13 +13,16 @@
   <nav>
     <div class="nav-left" onClick="reset()">
       <audio id="audio7" src="sounds/reset.mp4"></audio>
-      <h1>Stef's Pokedex</h1><img src='images/dex.png'></div>
+      <h1>Stef's Pokedex</h1><img src='images/dex.png'>
+      <img src='' id='spriteBox'>
+    </div>
+
     <div class="nav-right">
-      <img src="images/pball-gh.png" onclick="pkmn6()" class="nav-btn">
+      <img src="images/pball-gh.png" onmouseover="sprite6()" onclick="pkmn6()" class="nav-btn">
       <audio id="audio6" src="sounds/haunter.mp4" class="nav-btn"></audio>
 
       <audio id="audio5" src="sounds/eggs.mp4" class="nav-btn"></audio>
-      <img src="images/pball-p.png" onclick="pkmn5()" class="nav-btn">
+      <img src="images/pball-p.png" onclick="pkmn5()" onmouseover="sprite5()" class="nav-btn">
 
       <img src="images/pball-g.png" onclick="pkmn4()" class="nav-btn">
       <audio id="audio4" src="sounds/ss.mp4" class="nav-btn"></audio>
@@ -38,15 +41,23 @@
   <section id='frontHouse' class='regBorder'>
     <div id='pokeBorder'>
       <div id='backHouse'>
-        <div id='pokeInfo'>Pokemon Text</div>
+        <div id='pokeInfo'>
+          <h2 id='pokename'>Welcome to my Pokedex</h2>
+          <p id='hp'>Click a PokeBall to see my team!</p>
+          <p id='attack'></p>
+          <p id='defense'></p>
+          <p id='ability1'></p>
+          <p id='ability2'></p>
+        </div>
         <div>
           <img src='images/stef.png' id='pkmnPic'></div>
       </div>
-      <!-- <div id='changes'><button>HEY</button><button>HEY</button><button>HEY</button></div> -->
+
     </div>
   </section>
 
   <footer></footer>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="application.js" charset="utf-8"></script>
 </body>
 

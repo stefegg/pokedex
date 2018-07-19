@@ -83,8 +83,12 @@ h1 {
 
 #pokeInfo {
   color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
+#pokename {
+  text-transform: uppercase;
+}
 
 #pokeBorder {
   border: 50px solid black;
@@ -121,10 +125,3 @@ h1 {
 .waterBorder {
   border: 20px solid #1e3c94;
 }
-
-/* #changes {
-margin: 2% 2.5%;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-column-gap: 2.5%;
-} */

@@ -28,6 +28,7 @@ function pkmn1() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball.png')";
   a.style.borderImageOutset = "30px 30px";
+  iChooseyou(0);
 }
 
 function pkmn2() {
@@ -60,6 +61,7 @@ function pkmn2() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-w.png')";
   a.style.borderImageOutset = "30px 30px";
+  iChooseyou(4);
 }
 
 function pkmn3() {
@@ -92,6 +94,7 @@ function pkmn3() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-e.png')";
   a.style.borderImageOutset = "30px 30px";
+  iChooseyou(5);
 }
 
 function pkmn4() {
@@ -124,6 +127,7 @@ function pkmn4() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-g.png')";
   a.style.borderImageOutset = "30px 30px";
+  iChooseyou(1);
 }
 
 function pkmn5() {
@@ -156,6 +160,7 @@ function pkmn5() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-p.png')";
   a.style.borderImageOutset = "30px 30px";
+  iChooseyou(3);
 }
 
 function pkmn6() {
@@ -188,6 +193,7 @@ function pkmn6() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-gh.png')";
   a.style.borderImageOutset = "30px 30px";
+  specialSnowflake(2);
 }
 
 function reset() {
@@ -220,6 +226,7 @@ function reset() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball.png')";
   a.style.borderImageOutset = "30px 30px";
+  iResetyou();
 }
 
 pkmnPics = {
@@ -230,4 +237,85 @@ pkmnPics = {
   five: 'images/' + 'exeggutor.png',
   six: 'images/' + 'haunter.png',
   seven: 'images/' + 'stef.png'
+}
+
+teamStef = [];
+pokeStuff = [];
+
+class Pokeball {
+	constructor(pokemon){
+      this.pokemon = pokemon;
+		axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}/`)
+		.then((response) => {
+        pokeStuff = response.data;
+        teamStef.push(pokeStuff);
+        teamStef.sort(function (a, b) {
+          return a.id - b.id;
+        });
+    })
+	}
+}
+
+class Trainer {
+  constructor(pokemon) {
+    this.pokemon = pokemon;
+  }
+  all() {
+    return this.pokemon;
+  }
+  get(name) {
+    for(let i = 0; i < this.pokemon.length; i++) {
+      if(name === this.pokemon[i].name) {
+        return this.pokemon[i];
+      }
+    }
+  }
+}
+
+firePoke = new Pokeball(6);
+groundPoke = new Pokeball(28);
+ghostPoke = new Pokeball(93);
+plantPoke = new Pokeball(103);
+waterPoke = new Pokeball(117);
+elecPoke = new Pokeball(135);
+Stef = new Trainer(teamStef);
+
+function iChooseyou(id){
+  document.getElementById('pokename').innerHTML = teamStef[id].name;
+  let pokeHp = teamStef[id].stats[5].base_stat;
+  document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
+  let pokeAtk = teamStef[id].stats[4].base_stat;
+  document.getElementById('attack').innerHTML = `Attack: ${pokeAtk}`;
+  let pokeDef = teamStef[id].stats[3].base_stat;
+  document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
+  let pokeAb1 = teamStef[id].abilities[0].ability.name.toUpperCase();
+  document.getElementById('ability1').innerHTML = `Ability One: ${pokeAb1}`;
+  let pokeAb2 = teamStef[id].abilities[1].ability.name.toUpperCase();
+  document.getElementById('ability2').innerHTML = `Ability Two: ${pokeAb2}`;
+}
+
+function specialSnowflake(id){
+  document.getElementById('pokename').innerHTML = teamStef[id].name;
+  let pokeHp = teamStef[id].stats[5].base_stat;
+  document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
+  let pokeAtk = teamStef[id].stats[4].base_stat;
+  document.getElementById('attack').innerHTML = `Attack: ${pokeAtk}`;
+  let pokeDef = teamStef[id].stats[3].base_stat;
+  document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
+  let pokeAb1 = teamStef[id].abilities[0].ability.name.toUpperCase();
+  document.getElementById('ability1').innerHTML = `Ability One: ${pokeAb1}`;
+  document.getElementById('ability2').innerHTML ='';
+}
+
+function iResetyou(){
+  document.getElementById('pokename').innerHTML = 'Welcome to my Pokedex';
+  document.getElementById('hp').innerHTML = 'Click on a PokeBall above to see my team!';
+  document.getElementById('attack').innerHTML = '';
+  document.getElementById('defense').innerHTML ='';
+  document.getElementById('ability1').innerHTML = '';
+  document.getElementById('ability2').innerHTML = '';
+}
+
+function sprite6(){
+  document.getElementById('spriteBox').src = 
 }
