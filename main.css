@@ -138,16 +138,16 @@ h1 {
   border: 20px solid #1e3c94;
 }
 
-.notWhite {
-  background:
+.regBGfix {
+  background-image:
   linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 85%),
   url('images/r-bg.jpg');
   background-size: cover;
 }
 
-.notWhite2 {
-  background:
+.beachBgfix {
+  background-image:
   linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 85%),
-  url('images/beach-bg.jpg'); 
+  url('images/beach-bg.jpg') !important;
   background-size: cover;
 }

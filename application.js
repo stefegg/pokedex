@@ -18,6 +18,8 @@ function pkmn1() {
   x.style.backgroundImage="url('images/fire.png')";
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/f-bg.jpg')";
+  z.classList.remove('regBGfix');
+  z.classList.remove('beachBgfix');
   z.classList.remove('regBorder');
   z.classList.remove('ghostBorder');
   z.classList.remove('plantBorder');
@@ -50,7 +52,10 @@ function pkmn2() {
   var x = document.getElementById('backHouse')
   x.style.backgroundImage="url('images/water.png')"
   var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="url('images/beach-bg.jpg')";
+  z.style.backgroundImage="";
+  z.classList.add('beachBgfix');
+  void z.offsetWidth
+  z.classList.remove('regBGfix');
   z.classList.remove('regBorder');
   z.classList.remove('ghostBorder');
   z.classList.remove('plantBorder');
@@ -85,6 +90,8 @@ function pkmn3() {
   x.style.backgroundImage="url('images/electric.png')";
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/e-bg.jpg')";
+  z.classList.remove('regBGfix');
+  z.classList.remove('beachBgfix');
   z.classList.remove('regBorder');
   z.classList.remove('ghostBorder');
   z.classList.remove('plantBorder');
@@ -118,6 +125,8 @@ function pkmn4() {
   x.style.backgroundImage="url('images/ground.png')"
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/g-bg.jpg')";
+  z.classList.remove('regBGfix');
+  z.classList.remove('beachBgfix');
   z.classList.remove('regBorder');
   z.classList.remove('ghostBorder');
   z.classList.remove('plantBorder');
@@ -151,6 +160,8 @@ function pkmn5() {
   x.style.backgroundImage="url('images/plant.png')"
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/p-bg.jpg')";
+  z.classList.remove('regBGfix');
+  z.classList.remove('beachBgfix');
   z.classList.remove('regBorder');
   z.classList.remove('ghostBorder');
   z.classList.remove('fireBorder');
@@ -184,6 +195,8 @@ function pkmn6() {
   x.style.backgroundImage="url('images/ghost.png')"
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/gh-bg.jpg')";
+  z.classList.remove('regBGfix');
+  z.classList.remove('beachBgfix');
   z.classList.remove('regBorder');
   z.classList.remove('fireBorder');
   z.classList.remove('plantBorder');
@@ -216,7 +229,10 @@ function reset() {
   var x = document.getElementById('backHouse');
   x.style.backgroundImage="url('images/pball.png')";
   var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="url('images/r-bg.jpg')";
+  z.style.backgroundImage="";
+  void z.offsetWidth
+  z.classList.add('regBGfix');
+  z.classList.remove('beachBgfix');
   z.classList.remove('fireBorder');
   z.classList.remove('ghostBorder');
   z.classList.remove('plantBorder');
