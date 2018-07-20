@@ -246,7 +246,7 @@ function specialSnowflake(id){
   let pokeDef = teamStef[id].stats[3].base_stat;
   document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
   let pokeAb1 = teamStef[id].abilities[0].ability.name.toUpperCase();
-  document.getElementById('ability1').innerHTML = `Ability One: ${pokeAb1}`;
+  document.getElementById('ability1').innerHTML = `Ability: ${pokeAb1}`;
   document.getElementById('ability2').innerHTML ='';
   let pokeMove = teamStef[id].moves[10].move.name.toUpperCase();
   let pokeMove2 = teamStef[id].moves[16].move.name.toUpperCase();
@@ -255,7 +255,7 @@ function specialSnowflake(id){
 
 function iResetyou(){
   document.getElementById('pokename').innerHTML = 'Welcome to my Pokedex';
-  document.getElementById('hp').innerHTML = 'Click on a PokeBall above to see my team!';
+  document.getElementById('hp').innerHTML = 'Choose a Pokeball above to see team Stef!';
   document.getElementById('attack').innerHTML = '';
   document.getElementById('defense').innerHTML ='';
   document.getElementById('ability1').innerHTML = '';
