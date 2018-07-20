@@ -1,23 +1,18 @@
-function pkmn1() {
-  var audio = document.getElementById("audio");
-  audio.play();
-  var y = document.getElementById('pkmnPic');
-  y.classList.remove('wobble');
-  y.classList.remove('bounceInDown');
-  y.classList.remove('animated');
-  y.classList.remove('zoomInUp');
-  y.classList.remove('lightSpeedIn');
-  y.classList.remove('rubberBand');
-  y.classList.remove('zoomInRight');
-  y.classList.remove('tada');
-  void y.offsetWidth;
-  y.classList.add('animated');
-  y.classList.add('zoomInUp');
-  y.src = pkmnPics.one;
-  var x = document.getElementById('backHouse');
-  x.style.backgroundImage="url('images/fire.png')";
-  var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="url('images/f-bg.jpg')";
+var y = document.getElementById('pkmnPic');
+function removeAnimation() {
+y.classList.remove('wobble');
+y.classList.remove('bounceInDown');
+y.classList.remove('animated');
+y.classList.remove('zoomInUp');
+y.classList.remove('lightSpeedIn');
+y.classList.remove('rubberBand');
+y.classList.remove('zoomInRight');
+y.classList.remove('tada');
+void y.offsetWidth;
+};
+
+var z = document.getElementById('frontHouse');
+function removeBorder() {
   z.classList.remove('regBGfix');
   z.classList.remove('beachBgfix');
   z.classList.remove('regBorder');
@@ -26,6 +21,21 @@ function pkmn1() {
   z.classList.remove('electBorder');
   z.classList.remove('waterBorder');
   z.classList.remove('groundBorder');
+  z.classList.remove('fireBorder');
+};
+
+
+function pkmn1() {
+  var audio = document.getElementById("audio");
+  audio.play();
+  removeAnimation();
+  y.classList.add('animated');
+  y.classList.add('zoomInUp');
+  y.src = pkmnPics.one;
+  var x = document.getElementById('backHouse');
+  x.style.backgroundImage="url('images/fire.png')";
+  z.style.backgroundImage="url('images/f-bg.jpg')";
+  removeBorder();
   z.classList.add('fireBorder');
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball.png')";
@@ -37,16 +47,7 @@ function pkmn1() {
 function pkmn2() {
   var audio2 = document.getElementById("audio2");
   audio2.play();
-  var y = document.getElementById('pkmnPic');
-  y.classList.remove('wobble');
-  y.classList.remove('bounceInDown');
-  y.classList.remove('animated');
-  y.classList.remove('zoomInUp');
-  y.classList.remove('lightSpeedIn');
-  y.classList.remove('rubberBand');
-  y.classList.remove('zoomInRight');
-  y.classList.remove('tada');
-  void y.offsetWidth;
+  removeAnimation();
   y.classList.add('animated');
   y.classList.add('wobble');
   y.src = pkmnPics.two;
@@ -56,13 +57,7 @@ function pkmn2() {
   z.style.backgroundImage="";
   z.classList.add('beachBgfix');
   void z.offsetWidth
-  z.classList.remove('regBGfix');
-  z.classList.remove('regBorder');
-  z.classList.remove('ghostBorder');
-  z.classList.remove('plantBorder');
-  z.classList.remove('electBorder');
-  z.classList.remove('fireBorder');
-  z.classList.remove('groundBorder');
+  removeBorder();
   z.classList.add('waterBorder');
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-w.png')";
@@ -74,16 +69,7 @@ function pkmn2() {
 function pkmn3() {
   var audio3 = document.getElementById("audio3");
   audio3.play();
-  var y = document.getElementById('pkmnPic');
-  y.classList.remove('wobble');
-  y.classList.remove('bounceInDown');
-  y.classList.remove('animated');
-  y.classList.remove('zoomInUp');
-  y.classList.remove('lightSpeedIn');
-  y.classList.remove('rubberBand');
-  y.classList.remove('zoomInRight');
-  y.classList.remove('tada');
-  void y.offsetWidth;
+  removeAnimation();
   y.classList.add('animated');
   y.classList.add('bounceInDown');
   y.src = pkmnPics.three;
@@ -91,14 +77,7 @@ function pkmn3() {
   x.style.backgroundImage="url('images/electric.png')";
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/e-bg.jpg')";
-  z.classList.remove('regBGfix');
-  z.classList.remove('beachBgfix');
-  z.classList.remove('regBorder');
-  z.classList.remove('ghostBorder');
-  z.classList.remove('plantBorder');
-  z.classList.remove('fireBorder');
-  z.classList.remove('waterBorder');
-  z.classList.remove('groundBorder');
+  removeBorder();
   z.classList.add('electBorder');
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-e.png')";
@@ -110,16 +89,7 @@ function pkmn3() {
 function pkmn4() {
   var audio4 = document.getElementById("audio4");
   audio4.play();
-  var y = document.getElementById('pkmnPic');
-  y.classList.remove('wobble');
-  y.classList.remove('bounceInDown');
-  y.classList.remove('animated');
-  y.classList.remove('zoomInUp');
-  y.classList.remove('lightSpeedIn');
-  y.classList.remove('rubberBand');
-  y.classList.remove('zoomInRight');
-  y.classList.remove('tada');
-  void y.offsetWidth;
+  removeAnimation();
   y.classList.add('animated');
   y.classList.add('zoomInRight');
   y.src = pkmnPics.four;
@@ -127,14 +97,7 @@ function pkmn4() {
   x.style.backgroundImage="url('images/ground.png')"
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/g-bg.jpg')";
-  z.classList.remove('regBGfix');
-  z.classList.remove('beachBgfix');
-  z.classList.remove('regBorder');
-  z.classList.remove('ghostBorder');
-  z.classList.remove('plantBorder');
-  z.classList.remove('electBorder');
-  z.classList.remove('waterBorder');
-  z.classList.remove('fireBorder');
+  removeBorder();
   z.classList.add('groundBorder');
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-g.png')";
@@ -146,16 +109,7 @@ function pkmn4() {
 function pkmn5() {
   var audio5 = document.getElementById("audio5");
   audio5.play();
-  var y = document.getElementById('pkmnPic');
-  y.classList.remove('wobble');
-  y.classList.remove('bounceInDown');
-  y.classList.remove('animated');
-  y.classList.remove('zoomInUp');
-  y.classList.remove('lightSpeedIn');
-  y.classList.remove('rubberBand');
-  y.classList.remove('zoomInRight');
-  y.classList.remove('tada');
-  void y.offsetWidth;
+  removeAnimation();
   y.classList.add('animated');
   y.classList.add('rubberBand');
   y.src = pkmnPics.five;
@@ -163,14 +117,7 @@ function pkmn5() {
   x.style.backgroundImage="url('images/plant.png')"
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/p-bg.jpg')";
-  z.classList.remove('regBGfix');
-  z.classList.remove('beachBgfix');
-  z.classList.remove('regBorder');
-  z.classList.remove('ghostBorder');
-  z.classList.remove('fireBorder');
-  z.classList.remove('electBorder');
-  z.classList.remove('waterBorder');
-  z.classList.remove('groundBorder');
+  removeBorder();
   z.classList.add('plantBorder');
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-p.png')";
@@ -182,16 +129,7 @@ function pkmn5() {
 function pkmn6() {
   var audio6 = document.getElementById("audio6");
   audio6.play();
-  var y = document.getElementById('pkmnPic');
-  y.classList.remove('wobble');
-  y.classList.remove('bounceInDown');
-  y.classList.remove('animated');
-  y.classList.remove('zoomInUp');
-  y.classList.remove('lightSpeedIn');
-  y.classList.remove('rubberBand');
-  y.classList.remove('zoomInRight');
-  y.classList.remove('tada');
-  void y.offsetWidth;
+  removeAnimation();
   y.classList.add('animated');
   y.classList.add('lightSpeedIn');
   y.src = pkmnPics.six;
@@ -199,14 +137,7 @@ function pkmn6() {
   x.style.backgroundImage="url('images/ghost.png')"
   var z = document.getElementById('frontHouse');
   z.style.backgroundImage="url('images/gh-bg.jpg')";
-  z.classList.remove('regBGfix');
-  z.classList.remove('beachBgfix');
-  z.classList.remove('regBorder');
-  z.classList.remove('fireBorder');
-  z.classList.remove('plantBorder');
-  z.classList.remove('electBorder');
-  z.classList.remove('waterBorder');
-  z.classList.remove('groundBorder');
+  removeBorder();
   z.classList.add('ghostBorder');
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-gh.png')";
@@ -218,16 +149,7 @@ function pkmn6() {
 function reset() {
   var audio = document.getElementById("audio7");
   audio.play();
-  var y = document.getElementById('pkmnPic');
-  y.classList.remove('wobble');
-  y.classList.remove('bounceInDown');
-  y.classList.remove('animated');
-  y.classList.remove('zoomInUp');
-  y.classList.remove('lightSpeedIn');
-  y.classList.remove('rubberBand');
-  y.classList.remove('zoomInRight');
-  y.classList.remove('tada');
-  void y.offsetWidth;
+  removeAnimation();
   y.classList.add('animated');
   y.classList.add('tada');
   y.src = pkmnPics.seven;
@@ -238,12 +160,7 @@ function reset() {
   void z.offsetWidth
   z.classList.add('regBGfix');
   z.classList.remove('beachBgfix');
-  z.classList.remove('fireBorder');
-  z.classList.remove('ghostBorder');
-  z.classList.remove('plantBorder');
-  z.classList.remove('electBorder');
-  z.classList.remove('waterBorder');
-  z.classList.remove('groundBorder');
+  removeBorder();
   z.classList.add('regBorder');
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball.png')";
