@@ -3,31 +3,26 @@ body {
   height: 100%;
   margin: 0 0 0 0;
   background-image: url("images/xy-bg.png");
-  background-size: cover;
-}
+  background-size: cover; }
 
 nav {
   width: 100%;
   background-color: black;
-  height: 30vh;
+  height: 40%;
   display: grid;
   grid-template-columns: 50% 50%;
-  /* grid-column-gap: 5%; */
   overflow: auto;
-  background-image: url("images/bg.jpg");
-}
+  background-image: url("images/bg.jpg"); }
 
 section {
   width: 90%;
   margin-top: 2.5%;
   margin-left: 4%;
   margin-bottom: 2.5%;
-  min-height: 550px;
-}
+  min-height: 550px; }
 
 h1 {
-  margin: 0 0 2px 0;
-}
+  margin: 0 0 2px 0; }
 
 .nav-btn {
   max-width: 12.5%;
@@ -36,29 +31,24 @@ h1 {
   margin: 0 5px;
   float: right;
   transition-property: max-width;
-  transition-duration: .5s;
-}
+  transition-duration: .5s; }
 
 .nav-btn:hover {
-  max-width: 20%;
-}
+  max-width: 15%; }
 
 .nav-left {
   color: red;
   font-size: 3vh;
   margin: 5% 5% 5% 5%;
   display: inline;
-  font-family: 'Aldrich', sans-serif;
-}
+  font-family: "Aldrich", sans-serif; }
 
 .nav-right {
-  margin: 5% 5% 5% 5%;
-}
+  margin: 5% 5% 5% 5%; }
 
 .nav-left img {
-  max-width: 15%;
-  margin-left: 5%;
-}
+  max-width: 12.5%;
+  margin-left: 5%; }
 
 #backHouse {
   display: grid;
@@ -69,85 +59,66 @@ h1 {
   background-size: contain;
   background-position: center;
   min-height: 550px;
-  background-image: url('images/pball.png');
-
-}
+  background-image: url("images/pball.png"); }
 
 #frontHouse {
-  background:
-  linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 85%),
-  url('images/r-bg.jpg');
-  background-size: cover;
-
-}
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 85%), url("images/r-bg.jpg");
+  background-size: cover; }
 
 #pkmnPic {
-  float: right;
-}
+  float: right; }
 
 #pokeInfo {
   color: white;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
-}
-
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5); }
 
 #pokeInfo p {
-  font-family: 'Carter One', cursive;
-  font-size: 36px;
-}
+  font-family: "Carter One", cursive;
+  font-size: 36px; }
 
 #pokename {
   text-transform: uppercase;
-  font-family: 'Passion One', cursive;
-  font-size: 54px;
-}
+  font-family: "Passion One", cursive;
+  font-size: 54px; }
 
 #pokeBorder {
   border: 50px solid black;
-  border-image-source: url(images/pball.png);
+  border-image-source: url("images/pball.png");
   border-image-width: inherit;
   border-image-repeat: initial;
-  border-image-outset: 30px 30px;
-}
+  border-image-outset: 30px 30px; }
 
 .regBorder {
-  border: 20px solid #94a1b1;
-}
+  border: 20px solid #94a1b1; }
 
 .fireBorder {
-  border: 20px solid #771917;
-}
+  border: 20px solid #771917; }
 
 .plantBorder {
-  border: 20px solid #2e6234;
-}
+  border: 20px solid #2e6234; }
 
 .ghostBorder {
-  border: 20px solid #4d2c87;
-}
+  border: 20px solid #4d2c87; }
 
 .electBorder {
-  border: 20px solid #ffba52;
-}
+  border: 20px solid #ffba52; }
 
 .groundBorder {
-  border: 20px solid #946b3a;
-}
+  border: 20px solid #946b3a; }
 
 .waterBorder {
-  border: 20px solid #1e3c94;
-}
+  border: 20px solid #1e3c94; }
 
 .regBGfix {
-  background-image:
-  linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 85%),
-  url('images/r-bg.jpg');
-  background-size: cover;
-}
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 85%), url("images/r-bg.jpg");
+  background-size: cover; }
 
 .beachBgfix {
-  background-image:
-  linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 85%),
-  url('images/beach-bg.jpg') !important;
-  background-size: cover;
-}
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 85%), url("images/beach-bg.jpg") !important;
+  background-size: cover; }
+
+  .hidden {
+    opacity: 0;
+  }
+
+/*# sourceMappingURL=main.css.map */

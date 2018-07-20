@@ -15,7 +15,7 @@
     <div class="nav-left" onClick="reset()">
       <audio id="audio7" src="sounds/reset.mp4"></audio>
       <h1>Stef's Pokedex</h1><img src='images/dex.png' onmouseover="sprite0()">
-      <img src='' id='spriteBox'>
+      <img src='images/stef.png' id='spriteBox'>
     </div>
 
     <div class="nav-right">
@@ -41,7 +41,7 @@
 
   <section id='frontHouse' class='regBorder'>
     <div id='pokeBorder'>
-      <div id='backHouse'>
+      <div id='backHouse' onclick="showMoves()">
         <div id='pokeInfo' >
           <h2 id='pokename'>Welcome to my Pokedex</h2>
           <p id='hp'>Choose a Pokeball!</p>
@@ -49,9 +49,12 @@
           <p id='defense'></p>
           <p id='ability1'></p>
           <p id='ability2'></p>
+          <p id='moves' class='hidden'></p>
         </div>
         <div>
           <img src='images/stef.png' id='pkmnPic'></div>
+
+
       </div>
 
     </div>

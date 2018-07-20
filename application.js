@@ -30,6 +30,7 @@ function pkmn1() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball.png')";
   a.style.borderImageOutset = "30px 30px";
+  hideMoves();
   iChooseyou(0);
 }
 
@@ -66,8 +67,8 @@ function pkmn2() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-w.png')";
   a.style.borderImageOutset = "30px 30px";
+  hideMoves();
   iChooseyou(4);
-
 }
 
 function pkmn3() {
@@ -102,6 +103,7 @@ function pkmn3() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-e.png')";
   a.style.borderImageOutset = "30px 30px";
+  hideMoves();
   iChooseyou(5);
 }
 
@@ -137,6 +139,7 @@ function pkmn4() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-g.png')";
   a.style.borderImageOutset = "30px 30px";
+  hideMoves();
   iChooseyou(1);
 }
 
@@ -172,6 +175,7 @@ function pkmn5() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-p.png')";
   a.style.borderImageOutset = "30px 30px";
+  hideMoves();
   iChooseyou(3);
 }
 
@@ -207,6 +211,7 @@ function pkmn6() {
   var a = document.getElementById('pokeBorder');
   a.style.borderImage="url('images/pball-gh.png')";
   a.style.borderImageOutset = "30px 30px";
+  hideMoves();
   specialSnowflake(2);
 }
 
@@ -244,10 +249,11 @@ function reset() {
   a.style.borderImage="url('images/pball.png')";
   a.style.borderImageOutset = "30px 30px";
   iResetyou();
+  hideMoves();
 }
 
 pkmnPics = {
-  one: 'images/' + 'charizard.png',
+  one: 'images/' + 'charizard2.png',
   two: 'images/' + 'Seadra.png',
   three: 'images/' + 'jolteon.png',
   four: 'images/' + 'sandslash.png',
@@ -309,6 +315,9 @@ function iChooseyou(id){
   document.getElementById('ability1').innerHTML = `Ability One: ${pokeAb1}`;
   let pokeAb2 = teamStef[id].abilities[1].ability.name.toUpperCase();
   document.getElementById('ability2').innerHTML = `Ability Two: ${pokeAb2}`;
+  let pokeMove = teamStef[id].moves[0].move.name.toUpperCase();
+  let pokeMove2 = teamStef[id].moves[1].move.name.toUpperCase();
+  document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
 }
 
 function specialSnowflake(id){
@@ -322,15 +331,19 @@ function specialSnowflake(id){
   let pokeAb1 = teamStef[id].abilities[0].ability.name.toUpperCase();
   document.getElementById('ability1').innerHTML = `Ability One: ${pokeAb1}`;
   document.getElementById('ability2').innerHTML ='';
+  let pokeMove = teamStef[id].moves[10].move.name.toUpperCase();
+  let pokeMove2 = teamStef[id].moves[16].move.name.toUpperCase();
+  document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
 }
 
 function iResetyou(){
   document.getElementById('pokename').innerHTML = 'Welcome to my Pokedex';
-  document.getElementById('hp').innerHTML = 'Click on a PokeBalls above to see my team!';
+  document.getElementById('hp').innerHTML = 'Click on a PokeBall above to see my team!';
   document.getElementById('attack').innerHTML = '';
   document.getElementById('defense').innerHTML ='';
   document.getElementById('ability1').innerHTML = '';
   document.getElementById('ability2').innerHTML = '';
+  document.getElementById('moves').innerHTML = '';
 }
 
 function sprite6(){
@@ -359,4 +372,12 @@ function sprite1(){
 
 function sprite0(){
   document.getElementById('spriteBox').src = pkmnPics.seven;
+}
+
+function showMoves(){
+  document.getElementById('moves').classList.remove('hidden');
+}
+
+function hideMoves(){
+  document.getElementById('moves').classList.add('hidden');
 }
