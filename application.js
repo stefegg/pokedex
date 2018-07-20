@@ -29,8 +29,6 @@ function pkmn1() {
   a.style.borderImage="url('images/pball.png')";
   a.style.borderImageOutset = "30px 30px";
   iChooseyou(0);
-  var b = document.getElementById('pokeInfo');
-  b.classList.remove('notWhite');
 }
 
 function pkmn2() {
@@ -64,8 +62,7 @@ function pkmn2() {
   a.style.borderImage="url('images/pball-w.png')";
   a.style.borderImageOutset = "30px 30px";
   iChooseyou(4);
-  var b = document.getElementById('pokeInfo');
-  b.classList.add('notWhite');
+
 }
 
 function pkmn3() {
@@ -99,8 +96,6 @@ function pkmn3() {
   a.style.borderImage="url('images/pball-e.png')";
   a.style.borderImageOutset = "30px 30px";
   iChooseyou(5);
-  var b = document.getElementById('pokeInfo');
-  b.classList.remove('notWhite');
 }
 
 function pkmn4() {
@@ -134,8 +129,6 @@ function pkmn4() {
   a.style.borderImage="url('images/pball-g.png')";
   a.style.borderImageOutset = "30px 30px";
   iChooseyou(1);
-  var b = document.getElementById('pokeInfo');
-  b.classList.remove('notWhite');
 }
 
 function pkmn5() {
@@ -169,8 +162,6 @@ function pkmn5() {
   a.style.borderImage="url('images/pball-p.png')";
   a.style.borderImageOutset = "30px 30px";
   iChooseyou(3);
-  var b = document.getElementById('pokeInfo');
-  b.classList.remove('notWhite');
 }
 
 function pkmn6() {
@@ -204,8 +195,6 @@ function pkmn6() {
   a.style.borderImage="url('images/pball-gh.png')";
   a.style.borderImageOutset = "30px 30px";
   specialSnowflake(2);
-  var b = document.getElementById('pokeInfo');
-  b.classList.remove('notWhite');
 }
 
 function reset() {
@@ -239,8 +228,6 @@ function reset() {
   a.style.borderImage="url('images/pball.png')";
   a.style.borderImageOutset = "30px 30px";
   iResetyou();
-  var b = document.getElementById('pokeInfo');
-  b.classList.add('notWhite');
 }
 
 pkmnPics = {
@@ -323,12 +310,11 @@ function specialSnowflake(id){
 
 function iResetyou(){
   document.getElementById('pokename').innerHTML = 'Welcome to my Pokedex';
-  document.getElementById('hp').innerHTML = 'Click on a PokeBall above to see my team!';
+  document.getElementById('hp').innerHTML = 'Click on a PokeBalls above to see my team!';
   document.getElementById('attack').innerHTML = '';
   document.getElementById('defense').innerHTML ='';
   document.getElementById('ability1').innerHTML = '';
   document.getElementById('ability2').innerHTML = '';
-  document.getElementById('pokeInfo').classList.add('notWhite');
 }
 
 function sprite6(){

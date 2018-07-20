@@ -70,11 +70,15 @@ h1 {
   background-position: center;
   min-height: 550px;
   background-image: url('images/pball.png');
+
 }
 
 #frontHouse {
-  background-image: url('images/r-bg.jpg');
+  background:
+  linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 85%),
+  url('images/r-bg.jpg');
   background-size: cover;
+
 }
 
 #pkmnPic {
@@ -86,8 +90,16 @@ h1 {
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
+
+#pokeInfo p {
+  font-family: 'Carter One', cursive;
+  font-size: 36px;
+}
+
 #pokename {
   text-transform: uppercase;
+  font-family: 'Passion One', cursive;
+  font-size: 54px;
 }
 
 #pokeBorder {
@@ -127,6 +139,15 @@ h1 {
 }
 
 .notWhite {
-  color: #000456 !important;
-  text-shadow: 4px 4px 2px rgba(253,172,0, 0.5) !important;
+  background:
+  linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 85%),
+  url('images/r-bg.jpg');
+  background-size: cover;
+}
+
+.notWhite2 {
+  background:
+  linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 85%),
+  url('images/beach-bg.jpg'); 
+  background-size: cover;
 }
