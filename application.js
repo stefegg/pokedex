@@ -143,7 +143,7 @@ function pkmn6() {
   a.style.borderImage="url('images/pball-gh.png')";
   a.style.borderImageOutset = "30px 30px";
   hideMoves();
-  specialSnowflake(2);
+  specialHaunter(2);
 }
 
 function reset() {
@@ -237,7 +237,7 @@ function iChooseyou(id){
   document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
 }
 
-function specialSnowflake(id){
+function specialHaunter(id){
   document.getElementById('pokename').innerHTML = teamStef[id].name;
   let pokeHp = teamStef[id].stats[5].base_stat;
   document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
