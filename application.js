@@ -1,17 +1,19 @@
 var y = document.getElementById('pkmnPic');
+
 function removeAnimation() {
-y.classList.remove('wobble');
-y.classList.remove('bounceInDown');
-y.classList.remove('animated');
-y.classList.remove('zoomInUp');
-y.classList.remove('lightSpeedIn');
-y.classList.remove('rubberBand');
-y.classList.remove('zoomInRight');
-y.classList.remove('tada');
-void y.offsetWidth;
+  y.classList.remove('wobble');
+  y.classList.remove('bounceInDown');
+  y.classList.remove('animated');
+  y.classList.remove('zoomInUp');
+  y.classList.remove('lightSpeedIn');
+  y.classList.remove('rubberBand');
+  y.classList.remove('zoomInRight');
+  y.classList.remove('tada');
+  void y.offsetWidth;
 };
 
 var z = document.getElementById('frontHouse');
+
 function removeBorder() {
   z.classList.remove('regBGfix');
   z.classList.remove('beachBgfix');
@@ -33,12 +35,12 @@ function pkmn1() {
   y.classList.add('zoomInUp');
   y.src = pkmnPics.one;
   var x = document.getElementById('backHouse');
-  x.style.backgroundImage="url('images/fire.png')";
-  z.style.backgroundImage="url('images/f-bg.jpg')";
+  x.style.backgroundImage = "url('images/fire.png')";
+  z.style.backgroundImage = "url('images/f-bg.jpg')";
   removeBorder();
   z.classList.add('fireBorder');
   var a = document.getElementById('pokeBorder');
-  a.style.borderImage="url('images/pball.png')";
+  a.style.borderImage = "url('images/pball.png')";
   a.style.borderImageOutset = "30px 30px";
   hideMoves();
   iChooseyou(0);
@@ -52,15 +54,15 @@ function pkmn2() {
   y.classList.add('wobble');
   y.src = pkmnPics.two;
   var x = document.getElementById('backHouse')
-  x.style.backgroundImage="url('images/water.png')"
+  x.style.backgroundImage = "url('images/water.png')"
   var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="";
+  z.style.backgroundImage = "";
   z.classList.add('beachBgfix');
   void z.offsetWidth
   removeBorder();
   z.classList.add('waterBorder');
   var a = document.getElementById('pokeBorder');
-  a.style.borderImage="url('images/pball-w.png')";
+  a.style.borderImage = "url('images/pball-w.png')";
   a.style.borderImageOutset = "30px 30px";
   hideMoves();
   iChooseyou(4);
@@ -74,13 +76,13 @@ function pkmn3() {
   y.classList.add('bounceInDown');
   y.src = pkmnPics.three;
   var x = document.getElementById('backHouse');
-  x.style.backgroundImage="url('images/electric.png')";
+  x.style.backgroundImage = "url('images/electric.png')";
   var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="url('images/e-bg.jpg')";
+  z.style.backgroundImage = "url('images/e-bg.jpg')";
   removeBorder();
   z.classList.add('electBorder');
   var a = document.getElementById('pokeBorder');
-  a.style.borderImage="url('images/pball-e.png')";
+  a.style.borderImage = "url('images/pball-e.png')";
   a.style.borderImageOutset = "30px 30px";
   hideMoves();
   iChooseyou(5);
@@ -94,13 +96,13 @@ function pkmn4() {
   y.classList.add('zoomInRight');
   y.src = pkmnPics.four;
   var x = document.getElementById('backHouse')
-  x.style.backgroundImage="url('images/ground.png')"
+  x.style.backgroundImage = "url('images/ground.png')"
   var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="url('images/g-bg.jpg')";
+  z.style.backgroundImage = "url('images/g-bg.jpg')";
   removeBorder();
   z.classList.add('groundBorder');
   var a = document.getElementById('pokeBorder');
-  a.style.borderImage="url('images/pball-g.png')";
+  a.style.borderImage = "url('images/pball-g.png')";
   a.style.borderImageOutset = "30px 30px";
   hideMoves();
   iChooseyou(1);
@@ -114,13 +116,13 @@ function pkmn5() {
   y.classList.add('rubberBand');
   y.src = pkmnPics.five;
   var x = document.getElementById('backHouse')
-  x.style.backgroundImage="url('images/plant.png')"
+  x.style.backgroundImage = "url('images/plant.png')"
   var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="url('images/p-bg.jpg')";
+  z.style.backgroundImage = "url('images/p-bg.jpg')";
   removeBorder();
   z.classList.add('plantBorder');
   var a = document.getElementById('pokeBorder');
-  a.style.borderImage="url('images/pball-p.png')";
+  a.style.borderImage = "url('images/pball-p.png')";
   a.style.borderImageOutset = "30px 30px";
   hideMoves();
   iChooseyou(3);
@@ -134,16 +136,16 @@ function pkmn6() {
   y.classList.add('lightSpeedIn');
   y.src = pkmnPics.six;
   var x = document.getElementById('backHouse')
-  x.style.backgroundImage="url('images/ghost.png')"
+  x.style.backgroundImage = "url('images/ghost.png')"
   var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="url('images/gh-bg.jpg')";
+  z.style.backgroundImage = "url('images/gh-bg.jpg')";
   removeBorder();
   z.classList.add('ghostBorder');
   var a = document.getElementById('pokeBorder');
-  a.style.borderImage="url('images/pball-gh.png')";
+  a.style.borderImage = "url('images/pball-gh.png')";
   a.style.borderImageOutset = "30px 30px";
   hideMoves();
-  specialHaunter(2);
+  iChooseyou(2);
 }
 
 function reset() {
@@ -154,16 +156,16 @@ function reset() {
   y.classList.add('tada');
   y.src = pkmnPics.seven;
   var x = document.getElementById('backHouse');
-  x.style.backgroundImage="url('images/pball.png')";
+  x.style.backgroundImage = "url('images/pball.png')";
   var z = document.getElementById('frontHouse');
-  z.style.backgroundImage="";
+  z.style.backgroundImage = "";
   void z.offsetWidth
   z.classList.add('regBGfix');
   z.classList.remove('beachBgfix');
   removeBorder();
   z.classList.add('regBorder');
   var a = document.getElementById('pokeBorder');
-  a.style.borderImage="url('images/pball.png')";
+  a.style.borderImage = "url('images/pball.png')";
   a.style.borderImageOutset = "30px 30px";
   iResetyou();
   hideMoves();
@@ -183,17 +185,17 @@ teamStef = [];
 pokeStuff = [];
 
 class Pokeball {
-	constructor(pokemon){
-      this.pokemon = pokemon;
-		axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}/`)
-		.then((response) => {
+  constructor(pokemon) {
+    this.pokemon = pokemon;
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}/`)
+      .then((response) => {
         pokeStuff = response.data;
         teamStef.push(pokeStuff);
-        teamStef.sort(function (a, b) {
+        teamStef.sort(function(a, b) {
           return a.id - b.id;
         });
-    })
-	}
+      })
+  }
 }
 
 class Trainer {
@@ -204,8 +206,8 @@ class Trainer {
     return this.pokemon;
   }
   get(name) {
-    for(let i = 0; i < this.pokemon.length; i++) {
-      if(name === this.pokemon[i].name) {
+    for (let i = 0; i < this.pokemon.length; i++) {
+      if (name === this.pokemon[i].name) {
         return this.pokemon[i];
       }
     }
@@ -220,7 +222,7 @@ waterPoke = new Pokeball(117);
 elecPoke = new Pokeball(135);
 Stef = new Trainer(teamStef);
 
-function iChooseyou(id){
+function iChooseyou(id) {
   document.getElementById('pokename').innerHTML = teamStef[id].name;
   let pokeHp = teamStef[id].stats[5].base_stat;
   document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
@@ -228,73 +230,47 @@ function iChooseyou(id){
   document.getElementById('attack').innerHTML = `Attack: ${pokeAtk}`;
   let pokeDef = teamStef[id].stats[3].base_stat;
   document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
-  let pokeAb1 = teamStef[id].abilities[0].ability.name.toUpperCase();
-  document.getElementById('ability1').innerHTML = `Ability One: ${pokeAb1}`;
-  let pokeAb2 = teamStef[id].abilities[1].ability.name.toUpperCase();
-  document.getElementById('ability2').innerHTML = `Ability Two: ${pokeAb2}`;
+  let abilityArray = []
+  for (i = 0; i < teamStef[id].abilities.length; i++) {
+    abilityArray.push(teamStef[id].abilities[i].ability.name.toUpperCase());
+  }
+  let pokeAb1 = abilityArray[0];
+  let pokeAb2 = abilityArray[1];
+
+    document.getElementById('ability1').innerHTML = `Ability One: ${pokeAb1}`;
+  if (pokeAb2 == undefined) {
+    document.getElementById('ability2').innerHTML = "";
+  } else {
+    document.getElementById('ability2').innerHTML = `Ability Two: ${pokeAb2}`;
+  };
+
   let pokeMove = teamStef[id].moves[0].move.name.toUpperCase();
   let pokeMove2 = teamStef[id].moves[1].move.name.toUpperCase();
   document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
 }
 
-function specialHaunter(id){
-  document.getElementById('pokename').innerHTML = teamStef[id].name;
-  let pokeHp = teamStef[id].stats[5].base_stat;
-  document.getElementById('hp').innerHTML = `Hit Points: ${pokeHp}`;
-  let pokeAtk = teamStef[id].stats[4].base_stat;
-  document.getElementById('attack').innerHTML = `Attack: ${pokeAtk}`;
-  let pokeDef = teamStef[id].stats[3].base_stat;
-  document.getElementById('defense').innerHTML = `Defense: ${pokeDef}`;
-  let pokeAb1 = teamStef[id].abilities[0].ability.name.toUpperCase();
-  document.getElementById('ability1').innerHTML = `Ability: ${pokeAb1}`;
-  document.getElementById('ability2').innerHTML ='';
-  let pokeMove = teamStef[id].moves[10].move.name.toUpperCase();
-  let pokeMove2 = teamStef[id].moves[16].move.name.toUpperCase();
-  document.getElementById('moves').innerHTML = `Moves: ${pokeMove} , ${pokeMove2}`;
-}
-
-function iResetyou(){
+function iResetyou() {
   document.getElementById('pokename').innerHTML = 'Welcome to my Pokedex';
   document.getElementById('hp').innerHTML = 'Choose a Pokeball above to see team Stef!';
   document.getElementById('attack').innerHTML = '';
-  document.getElementById('defense').innerHTML ='';
+  document.getElementById('defense').innerHTML = '';
   document.getElementById('ability1').innerHTML = '';
   document.getElementById('ability2').innerHTML = '';
   document.getElementById('moves').innerHTML = '';
 }
 
-function sprite6(){
-  document.getElementById('spriteBox').src = teamStef[2].sprites.front_default;
+function sprite(i) {
+  document.getElementById('spriteBox').src = teamStef[i].sprites.front_default;
 }
 
-function sprite5(){
-  document.getElementById('spriteBox').src = teamStef[3].sprites.front_default;
-}
-
-function sprite4(){
-  document.getElementById('spriteBox').src = teamStef[1].sprites.front_default;
-}
-
-function sprite3(){
-  document.getElementById('spriteBox').src = teamStef[5].sprites.front_default;
-}
-
-function sprite2(){
-  document.getElementById('spriteBox').src = teamStef[4].sprites.front_default;
-}
-
-function sprite1(){
-  document.getElementById('spriteBox').src = teamStef[0].sprites.front_default;
-}
-
-function sprite0(){
+function sprite0() {
   document.getElementById('spriteBox').src = pkmnPics.seven;
 }
 
-function showMoves(){
+function showMoves() {
   document.getElementById('moves').classList.remove('hidden');
 }
 
-function hideMoves(){
+function hideMoves() {
   document.getElementById('moves').classList.add('hidden');
 }
